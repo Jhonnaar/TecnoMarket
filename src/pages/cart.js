@@ -29,9 +29,9 @@ export default function Cart (){
     const pay = () => {
         if (window.localStorage.getItem("token")) {
             window.localStorage.removeItem("cart")
-            navigate("/")
-        } else {
             navigate("/articles")
+        } else {
+            navigate("/login")
         }
     }
     return(
