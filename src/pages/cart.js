@@ -31,7 +31,7 @@ export default function Cart (){
             window.localStorage.removeItem("cart")
             navigate("/")
         } else {
-            navigate("/article")
+            navigate("/articles")
         }
     }
     return(
